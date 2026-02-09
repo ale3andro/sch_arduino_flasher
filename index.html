@@ -87,46 +87,103 @@
             height: 1.5rem;
             margin-left: 0.5rem;
         }
+        .alx_footer {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
+
                 <div class="card">
                     <div class="card-body p-5">
-                        <h1 class="text-center">Arduino S1 Web Flasher</h1>
-                        <p class="lead text-center">φλασάρισμα του S1 απευθείας από τον browser!</p>
+                        <h1 class="text-center">Sch Arduino Web Flasher</h1>
+                        <p class="lead text-center">φλασάρισμα των κιτ Ρομποτικής των Δημόσιων Σχολείων απευθείας από τον browser!</p>
                         <p class="lead text-center">για Google Chrome και τα ξαδερφάκια του (Edge, Chromium, Brave etc)</p>
+                    </div>
+                </div>
+                <br /><br />
+
+                <div class="card">
+                    <div class="card-body p-5">
+                        <h1 class="text-center">S1 Δημοτικού</h1>
                         
                         <div class="row g-4 mt-3">
                             <div class="col-12">
                                
                                 S1 + <a href="https://github.com/ale3andro/turbowarp_alx" target="_blank">alx_Turbowarp_Desktop</a>
-                                <button class="flash-btn btn-primary-custom" arduino-uploader hex-href="./hex/s1-arduino.ino.hex" board="uno" verify port-filters='[{"usbProductId":2341,"usbVendorId":0043}]'>
+                                <button class="flash-btn btn-primary-custom" arduino-uploader hex-href="./hex/s1/s1-arduino.ino.hex" board="uno" verify port-filters='[{"usbProductId":2341,"usbVendorId":0043}]'>
                                       S1 + turbowarp desktop [<span class="upload-progress">0%</span>]
                                  </button>
                             </div>
                             <div class="col-12">
-                                S1 + <a href="https://turbowarp.org/editor" target="_blank">Turbowarp online editor
-                                <button class="flash-btn btn-info-custom" arduino-uploader hex-href="./hex/s1-turbowarp-robotics-online.ino.hex" board="uno" verify port-filters='[{"usbProductId":2341,"usbVendorId":0043}]'>
+                                S1 + <a href="https://turbowarp.org/editor" target="_blank">Turbowarp online editor</a>
+                                <button class="flash-btn btn-info-custom" arduino-uploader hex-href="./hex/s1/s1-turbowarp-robotics-online.ino.hex" board="uno" verify port-filters='[{"usbProductId":2341,"usbVendorId":0043}]'>
                                     S1 + Turbowarp online editor [<span class="upload-progress">0%</span>]
                                 </button>
                             </div>
                             <div class="col-12">
                                 S1 + άδειο έργο (ιδανικό για reset)
-                                 <button class="flash-btn btn-success-custom" arduino-uploader hex-href="./hex/s1-empty.hex" board="uno" verify port-filters='[{"usbProductId":2341,"usbVendorId":0043}]'>
+                                 <button class="flash-btn btn-success-custom" arduino-uploader hex-href="./hex/s1/s1-empty.hex" board="uno" verify port-filters='[{"usbProductId":2341,"usbVendorId":0043}]'>
                                     S1 + άδειο έργο [<span class="upload-progress">0%</span>]
                                 </button>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <br /><br />
 
-                        <div id="status" class="status">
-                            <strong id="statusTitle">Status:</strong>
-                            <p id="statusMessage" class="mb-0 mt-2"></p>
+
+                <div class="card">
+                    <div class="card-body p-5">
+                        <h1 class="text-center">R2 Δημοτικού</h1>
+                        <div class="row g-4 mt-3">
+                            <div class="col-12">
+                                R2 + <a href="https://github.com/ale3andro/turbowarp_alx" target="_blank">alxR2 (bluetooh app for Android)</a>
+                                <button class="flash-btn btn-primary-custom" arduino-uploader hex-href="./hex/r2/s1-arduino.ino.hex" board="uno" verify port-filters='[{"usbProductId":2341,"usbVendorId":0043}]'>
+                                      R2 + alxR2 [<span class="upload-progress">0%</span>]
+                                 </button>
+                            </div>
+                            <div class="col-12">
+                                R2 + <a href="hhttps://mega.nz/file/BNgSHCzZ#kaPzwUby_ivAC4FpPmMsG2MjApfdV6NbyiIyBDH9xuM" target="_blank">Polytech Android app for R4</a>
+                                <button class="flash-btn btn-info-custom" arduino-uploader hex-href="./hex/r2/s1-turbowarp-robotics-online.ino.hex" board="uno" verify port-filters='[{"usbProductId":2341,"usbVendorId":0043}]'>
+                                    R2 + Polytech Android app for R4 [<span class="upload-progress">0%</span>]
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <br /><br />
+
+                <div class="card">
+                    <div class="card-body p-5">
+                        <h1 class="text-center">R4 Γυμνασίου</h1>
+                        <div class="row g-4 mt-3">
+                            <div class="col-12">
+                               
+                                R4 + <a href="#" target="_blank">alxR4 (bluetooh app for Android)</a>
+                                <button class="flash-btn btn-primary-custom" arduino-uploader hex-href="./hex/r4/s1-arduino.ino.hex" board="uno" verify port-filters='[{"usbProductId":2341,"usbVendorId":0043}]'>
+                                      R4 + alxR4 [<span class="upload-progress">0%</span>]
+                                 </button>
+                            </div>
+                            <div class="col-12">
+                                R4 + <a href="#" target="_blank">Polytech Android app for R4</a>
+                                <button class="flash-btn btn-info-custom" arduino-uploader hex-href="./hex/r4/s1-turbowarp-robotics-online.ino.hex" board="uno" verify port-filters='[{"usbProductId":2341,"usbVendorId":0043}]'>
+                                    R4 + Polytech Android app for R4 [<span class="upload-progress">0%</span>]
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                    
+
+
+
             </div>
         </div>
     </div>
@@ -134,8 +191,8 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="card">
-                    <div class="card-body p-5">
-                        <a href="https://ale3andro.gr" target="_blank">Αλέξανδρος Μοσκοφίδης</a> | rev.0.1 (2026.01.21) | Χρησιμοποιώντας <a href="https://github.com/dbuezas/arduino-web-uploader" target="_blank">αυτό</a> το εξαιρετικό εργαλείο.
+                    <div class="card-body p-5 alx_footer">
+                        <a href="https://ale3andro.gr" target="_blank">Αλέξανδρος Μοσκοφίδης</a> | rev.0.2 (2026.02.09) <br />Χρησιμοποιώντας <a href="https://github.com/dbuezas/arduino-web-uploader" target="_blank">αυτό</a> το εξαιρετικό εργαλείο.
                     </div>
                 </div>
             </div>
